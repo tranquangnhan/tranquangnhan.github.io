@@ -11,7 +11,7 @@ dotenv.config({ path: './.env' });
 const app = express();
 const db = mysql.createConnection({
     host: process.env.DATABASE_HOST,
-    user: 'root',
+    user: 'id12829212_admin',
     password: process.env.DATABASE_PASSWORD,
     database: process.env.DATABASE
 })
@@ -37,5 +37,6 @@ app.use('/', require('./routes/pages'));
 app.use('/auth', require('./routes/auth'));
 
 app.listen(8000, () => {
-    console.log('sever started on post 8000');
-})
+        console.log('sever started on post 8000');
+    })
+    // J-~QYmX!w@6!x(h&
