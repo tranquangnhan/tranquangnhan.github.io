@@ -90,7 +90,6 @@ function showPosition(position) {
         zoom: 17,
         center: gLatLon
     }
-
     var gMap = new google.maps.Map(x, ojbConfig);
     var gMarkerConfig = {
         position: gLatLon,

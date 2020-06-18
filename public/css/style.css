@@ -443,7 +443,7 @@ ul li {
 
 .service__boxleft .boxleft__boxitem .boxitem__text .text__icon ul::before {
     position: absolute;
-    left: 25%;
+    left: 28%;
     top: 8%;
     content: "";
     display: block;

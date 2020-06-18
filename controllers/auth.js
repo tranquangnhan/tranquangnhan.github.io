@@ -72,7 +72,7 @@ exports.register = (req, res) => {
                 message: 'Password và password confirm không trùng khớp !'
             });
         }
-        let hashPassword = await bcrypt.hash(password, 8); //hash password
+        let hashPassword = await bcrypt.hash(password, 8); //hash password 
         db.query('INSERT INTO users SET ?', { name: name, email: email, password: hashPassword }, (error, results) => {
             if (error) { //insert data vào data base
                 throw error;
@@ -84,9 +84,7 @@ exports.register = (req, res) => {
             }
 
         });
-        res.redirect('/', {
-            name: name
-        })
+        res.redirect('/');
     });
 
 }

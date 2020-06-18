@@ -1,5 +1,5 @@
 nav {
-    background-color: #563d7c;
+    background-color: #f15b5b;
     color: #fff;
     padding: 30px 60px;
     display: flex;
@@ -26,4 +26,58 @@ nav li a {
 nav li a:hover {
     color: yellow;
     text-decoration: none;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.bg-w {
+    background-color: rgba(180, 173, 144, 0.39);
+    box-shadow: 2px 2px 10px #333;
+}
+
+.form-group input {
+    background-color: rgba(255, 255, 255, 0.3);
+    outline: none;
+    border: 0;
+    color: white;
+}
+
+.form-group input:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    outline: hidden;
+}
+
+.form-group label {
+    color: white;
+}
+
+.card-header {
+    color: white;
+    font-size: 18pt;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .video {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width:739px) {
+    .video {
+        height: 100%;
+    }
 }
